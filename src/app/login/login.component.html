@@ -1,1 +1,37 @@
-<p>login works</p>
+<div class="min-h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('/assets/bg-vacas.jpg')">
+  <div class="bg-white rounded-2xl shadow-lg w-full max-w-md p-8 border-t-4 border-orange-400">
+    
+    <!-- Logo -->
+    <div class="flex justify-center mb-6">
+      <img src="/assets/logo-intar.png" alt="Intar" class="h-12">
+    </div>
+
+    <!-- Formulario -->
+    <form (ngSubmit)="onLogin()" #loginForm="ngForm" class="space-y-4">
+      <div>
+        <label class="block text-sm text-gray-600">Correo electrónico</label>
+        <input type="email" name="username" [(ngModel)]="username" required placeholder="Dirección de correo electrónico"
+          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+      </div>
+
+      <div>
+        <label class="block text-sm text-gray-600">Contraseña</label>
+        <input type="password" name="password" [(ngModel)]="password" required placeholder="Contraseña"
+          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+      </div>
+
+      <div class="text-right text-sm text-blue-600 hover:underline cursor-pointer">
+        ¿Has olvidado tu contraseña?
+      </div>
+
+      <button type="submit"
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md font-medium transition duration-200">
+        Iniciar Sesión
+      </button>
+    </form>
+
+    <div class="text-center mt-4 text-sm">
+      <a href="#" class="text-gray-600 hover:underline">Registrarse</a>
+    </div>
+  </div>
+</div>
