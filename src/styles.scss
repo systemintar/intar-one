@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.scss */
+
+/* Estas son las directivas de Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Si necesitas personalizar o agregar tus propios estilos, puedes hacerlo después */
+body {
+  font-family: 'Arial', sans-serif;
+}
