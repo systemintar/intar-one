@@ -1,0 +1,74 @@
+<main class="p-6 md:ml-64 bg-gray-50 min-h-screen">
+  <h1 class="text-3xl font-bold text-orange-600 mb-6">Potreros</h1>
+
+  <div class="bg-white rounded-xl shadow p-6">
+    <div class="flex flex-col md:flex-row justify-between items-center mb-4">
+      <h2 class="text-lg font-semibold mb-2 md:mb-0">Potrero en Ocupación</h2>
+      <div class="flex gap-2">
+        <button class="border border-gray-300 rounded-full px-4 py-1 text-sm">
+          Enero
+        </button>
+        <button
+          class="flex items-center gap-1 bg-white border border-gray-300 px-4 py-2 rounded-md text-sm"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 text-gray-500"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2 4a2 2 0 012-2h12a2 2 0 012 2v1H2V4zm0 3h16v9a2 2 0 01-2 2H4a2 2 0 01-2-2V7zm5 2a1 1 0 100 2h6a1 1 0 100-2H7z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          Buscar
+        </button>
+        <button class="bg-blue-800 text-white px-4 py-2 rounded-md text-sm">
+          Crear Nuevo
+        </button>
+      </div>
+    </div>
+
+    <div class="overflow-auto rounded-lg border border-gray-200">
+      <table class="w-full text-left text-sm text-gray-700">
+        <thead class="bg-gray-100 font-semibold text-gray-800">
+          <tr>
+            <th class="p-4">Día</th>
+            <th class="p-4">Identificación</th>
+            <th class="p-4">Especie</th>
+            <th class="p-4">Día de ocupación</th>
+            <th class="p-4">Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b hover:bg-gray-50">
+            <td class="p-4">29</td>
+            <td class="p-4">000001</td>
+            <td class="p-4">Elefante</td>
+            <td class="p-4">2/2</td>
+            <td class="p-4 flex gap-2">
+              <button class="text-green-600 hover:underline">✏️</button>
+              <button class="text-red-600 hover:underline">🗑️</button>
+              <button class="text-purple-600 hover:underline">👁️</button>
+            </td>
+          </tr>
+          <!-- Repite más filas según necesites -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="text-sm text-gray-500 mt-4">
+      Mostrando 4 resultados de 8
+      <div class="float-right flex items-center gap-2">
+        <span class="cursor-pointer">&lt;</span>
+        <span class="font-bold text-black">1</span>
+        <span class="cursor-pointer">2</span>
+        <span class="cursor-pointer">...</span>
+        <span class="cursor-pointer">3</span>
+        <span class="cursor-pointer">&gt;</span>
+      </div>
+    </div>
+  </div>
+</main>
