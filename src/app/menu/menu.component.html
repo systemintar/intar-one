@@ -1,0 +1,36 @@
+<div 
+  class="bg-white h-screen shadow-lg group transition-all duration-300 flex flex-col"
+  [ngClass]="{ 'w-64': isHovered, 'w-20': !isHovered }"
+  (mouseenter)="hoverSidebar(true)" 
+  (mouseleave)="hoverSidebar(false)"
+>
+
+  <!-- Logo -->
+  <div class="flex items-center justify-center h-20">
+    <img *ngIf="isHovered" src="assets/images/logo-intar.png" alt="Logo" class="h-10">
+    <img *ngIf="!isHovered" src="assets/images/logo-intar.png" alt="Logo pequeño" class="h-8">
+  </div>
+
+  <!-- Menú -->
+  <nav class="mt-5 flex-1">
+    <ul class="flex flex-col gap-2">
+
+      <li class="flex items-center gap-4 p-3 hover:bg-gray-100 cursor-pointer transition-colors duration-200">
+        <i class="fas fa-home text-xl"></i>
+        <span *ngIf="isHovered" class="transition-all">Inicio</span>
+      </li>
+
+      <li class="flex items-center gap-4 p-3 hover:bg-gray-100 cursor-pointer transition-colors duration-200">
+        <i class="fas fa-calendar-alt text-xl"></i>
+        <span *ngIf="isHovered" class="transition-all">Eventos</span>
+      </li>
+
+      <li class="flex items-center gap-4 p-3 hover:bg-gray-100 cursor-pointer transition-colors duration-200">
+        <i class="fas fa-stethoscope text-xl"></i>
+        <span *ngIf="isHovered" class="transition-all">Prácticas Sanitarias</span>
+      </li>
+
+    </ul>
+  </nav>
+
+</div>
