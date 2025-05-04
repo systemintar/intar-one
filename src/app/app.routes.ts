@@ -1,7 +1,9 @@
 import { Routes } from '@angular/router';
+import { PotrerosComponent } from './components/potreros/potreros.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
-import { LoginComponent } from './login/login.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 export const appRoutes: Routes = [
   {
@@ -20,8 +22,18 @@ export const appRoutes: Routes = [
     title: 'Forgot Password | Intar'
   },
   {
+    path: 'register',
+    component: RegisterComponent,
+    title: 'Register | Intar'
+  },
+  {
     path: '',
     redirectTo: 'login',
+    pathMatch: 'full',
+  },
+  {
+    path: 'potreros',
+    component: PotrerosComponent,
     pathMatch: 'full',
   },
 ];
