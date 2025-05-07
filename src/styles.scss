@@ -1,11 +1,13 @@
-/* styles.scss */
+// ✅ Primero los @use
+@use 'assets/scss/layout';
+@use 'primeicons/primeicons.css';
 
-/* Estas son las directivas de Tailwind */
+// ✅ Luego Tailwind
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Si necesitas personalizar o agregar tus propios estilos, puedes hacerlo después */
+// ✅ Después tus propios estilos
 body {
   font-family: 'Arial', sans-serif;
 }

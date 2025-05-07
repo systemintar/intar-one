@@ -4,7 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { LayoutComponent } from './layout/layout.component';
+import { AppLayout } from './layout/layout/layout.component';
 
 // Definir las rutas
 export const appRoutes: Routes = [
@@ -25,24 +25,23 @@ export const appRoutes: Routes = [
   },
   {
     path: '', // La ruta principal para el layout
-    component: LayoutComponent,
+    component: AppLayout,
     children: [
       {
         path: 'dashboard',
         component: DashboardComponent,
         title: 'Inicio | Intar'
       },
-      // Agrega otras rutas aquí según sea necesario
+      {
+        path: 'potreros',
+        component: PotrerosComponent,
+        pathMatch: 'full',
+      }
     ]
   },
   {
     path: '**', // Ruta para páginas no encontradas
     redirectTo: 'login',
     pathMatch: 'full',
-  },
-  {
-    path: 'potreros',
-    component: PotrerosComponent,
-    pathMatch: 'full',
-  },
+  }
 ];
