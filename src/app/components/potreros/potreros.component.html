@@ -1,21 +1,23 @@
-<main class="p-6 md:ml-64 bg-gray-50 min-h-screen">
-  <h1 class="text-3xl font-bold text-orange-600 mb-6">Potreros</h1>
+<main class="p-6 bg-gray-50 min-h-screen mx-auto">
+  <h1 class="text-4xl font-bold text-orange-500 mb-8 text-center">Potreros</h1>
 
-  <div class="bg-white rounded-xl shadow p-6">
+  <div class="bg-white rounded-2xl shadow-md p-6 w-full max-w-5xl mx-auto">
     <div class="flex flex-col md:flex-row justify-between items-center mb-4">
-      <h2 class="text-lg font-semibold mb-2 md:mb-0">Potrero en Ocupación</h2>
-      <div class="flex gap-2">
-        <button class="border border-gray-300 rounded-full px-4 py-1 text-sm">
+      <h2 class="text-xl font-semibold mb-2 md:mb-0">Potrero en Ocupación</h2>
+      <div class="flex gap-3">
+        <button
+          class="border border-gray-400 rounded-full px-4 py-1 text-sm font-medium"
+        >
           Enero
         </button>
         <button
-          class="flex items-center gap-1 bg-white border border-gray-300 px-4 py-2 rounded-md text-sm"
+          class="flex items-center gap-2 border border-gray-400 px-4 py-2 rounded-md text-sm"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 w-4 text-gray-500"
-            viewBox="0 0 20 20"
             fill="currentColor"
+            viewBox="0 0 20 20"
           >
             <path
               fill-rule="evenodd"
@@ -25,15 +27,17 @@
           </svg>
           Buscar
         </button>
-        <button class="bg-blue-800 text-white px-4 py-2 rounded-md text-sm">
+        <button
+          class="bg-blue-900 text-white px-4 py-2 rounded-md text-sm font-medium"
+        >
           Crear Nuevo
         </button>
       </div>
     </div>
 
     <div class="overflow-auto rounded-lg border border-gray-200">
-      <table class="w-full text-left text-sm text-gray-700">
-        <thead class="bg-gray-100 font-semibold text-gray-800">
+      <table class="w-full text-sm text-gray-700 text-center">
+        <thead class="bg-gray-100 text-gray-800 font-semibold">
           <tr>
             <th class="p-4">Día</th>
             <th class="p-4">Identificación</th>
@@ -48,26 +52,40 @@
             <td class="p-4">000001</td>
             <td class="p-4">Elefante</td>
             <td class="p-4">2/2</td>
-            <td class="p-4 flex gap-2">
-              <button class="text-green-600 hover:underline">✏️</button>
-              <button class="text-red-600 hover:underline">🗑️</button>
-              <button class="text-purple-600 hover:underline">👁️</button>
+            <td class="p-4">
+              <div class="flex gap-3 items-center justify-center">
+                <button
+                  class="text-green-600 hover:scale-105 transition-transform"
+                >
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+                <button
+                  class="text-red-600 hover:scale-105 transition-transform"
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+                <button
+                  class="text-purple-600 hover:scale-105 transition-transform"
+                >
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </div>
             </td>
           </tr>
-          <!-- Repite más filas según necesites -->
+          <!-- Repite más filas con los datos -->
         </tbody>
       </table>
     </div>
 
-    <div class="text-sm text-gray-500 mt-4">
-      Mostrando 4 resultados de 8
-      <div class="float-right flex items-center gap-2">
-        <span class="cursor-pointer">&lt;</span>
+    <div class="text-sm text-gray-500 mt-4 flex justify-between items-center">
+      <span>Mostrando 4 resultados de 8</span>
+      <div class="flex items-center gap-2">
+        <span class="cursor-pointer text-gray-700">&lt;</span>
         <span class="font-bold text-black">1</span>
         <span class="cursor-pointer">2</span>
         <span class="cursor-pointer">...</span>
         <span class="cursor-pointer">3</span>
-        <span class="cursor-pointer">&gt;</span>
+        <span class="cursor-pointer text-gray-700">&gt;</span>
       </div>
     </div>
   </div>
