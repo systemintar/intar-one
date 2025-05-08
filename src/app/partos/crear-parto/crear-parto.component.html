@@ -1,0 +1,43 @@
+<div class="form-container">
+    <h2 class="titulo">Partos</h2>
+  
+    <div class="form-group">
+      <label for="hembra">Identificación Hembra</label>
+      <p-dropdown [options]="identificacionesHembras" [(ngModel)]="parto.hembra" placeholder="Seleccione una opción"></p-dropdown>
+    </div>
+  
+    <div class="form-group">
+      <label for="condicion">Condición Corporal</label>
+      <p-dropdown [options]="condicionesCorporales" [(ngModel)]="parto.condicion" placeholder="Seleccione una opción"></p-dropdown>
+    </div>
+  
+    <div class="form-group">
+      <label><strong>Cría</strong></label>
+    </div>
+  
+    <div class="form-group">
+      <label for="sexo">Sexo</label>
+      <p-dropdown [options]="sexos" [(ngModel)]="parto.criaSexo" placeholder="Seleccione una opción"></p-dropdown>
+    </div>
+  
+    <div class="form-group">
+      <label for="criaIdentificacion">Identificación</label>
+      <input pInputText [(ngModel)]="parto.criaIdentificacion" placeholder="Identificación de la cría" />
+    </div>
+  
+    <div class="form-group">
+      <label for="criaPeso">Peso</label>
+      <input pInputText [(ngModel)]="parto.criaPeso" placeholder="Peso de la cría" />
+    </div>
+  
+    <div class="form-group">
+      <label for="observaciones">Observaciones</label>
+      <input pInputText [(ngModel)]="parto.observaciones" placeholder="Observaciones" />
+    </div>
+  
+    <div class="botones">
+      <button pButton label="Cancel" class="p-button-outlined" (click)="cancelar()"></button>
+      <button pButton label="Guardar" class="p-button-primary" (click)="guardarParto()"></button>
+    </div>
+  </div>
+  

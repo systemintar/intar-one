@@ -1,0 +1,48 @@
+$form-width: 600px;
+$primary-color: #fa6400;
+$text-color: #444;
+$spacing: 20px;
+
+.form-container {
+  max-width: $form-width;
+  margin: 0 auto;
+  padding-top: 30px;
+
+  .titulo {
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  .form-group {
+    margin-bottom: $spacing;
+
+    label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 5px;
+      color: $text-color;
+
+      strong {
+        font-weight: 600;
+        color: black;
+      }
+    }
+
+    ::ng-deep .p-dropdown,
+    ::ng-deep .p-inputtext {
+      width: 100%;
+    }
+  }
+
+  .botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    ::ng-deep button {
+      min-width: 120px;
+    }
+  }
+}
