@@ -1,30 +1,65 @@
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
+# ===============================
+# NODE / ANGULAR PROJECT CONFIG
+# ===============================
 
-# Laravel 4 specific
+# Dependencias
+node_modules/
+
+# Builds
+dist/
+out-tsc/
+
+# Angular
+.angular/
+
+# Logs y errores
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ambiente
+.env
+.env.*
+
+# Editor config / IDEs
+*.sublime-project
+*.sublime-workspace
+.vscode/
+.idea/
+*.log
+
+# Otros
+auth.json
+.phpactor.json
+package-lock.json
+
+# ===============================
+# LARAVEL CONFIG
+# ===============================
+
+/vendor/
+storage/*.key
+.phpunit.result.cache
+
+# Laravel 4
 bootstrap/compiled.php
 app/storage/
 
-# Laravel 5 & Lumen specific
+# Laravel 5 & Lumen
 public/storage
 public/hot
 
-# Laravel 5 & Lumen specific with changed public path
+# Laravel 5 con public cambiado
 public_html/storage
 public_html/hot
 
-storage/*.key
-.env
+# Vagrant / Homestead
+/.vagrant
 Homestead.yaml
 Homestead.json
-/.vagrant
-.phpunit.result.cache
 
+# Otros archivos Laravel
 /public/build
 /storage/pail
 .env.backup
 .env.production
-.phpactor.json
-auth.json
