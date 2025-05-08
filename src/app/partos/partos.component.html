@@ -1,0 +1,72 @@
+<div class="text-center mb-4">
+    <h1 class="text-3xl font-bold text-orange-600">Partos</h1>
+  </div>
+  
+  <div class="card">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-semibold">Partos Mes de Enero</h2>
+  
+      <div class="flex gap-2">
+        <button pButton icon="pi pi-filter" class="p-button-outlined" label="Buscar"></button>
+        <button pButton icon="pi pi-plus" label="Crear Nuevo" class="p-button-primary"  routerLink="crear-parto"></button>
+      </div>
+    </div>
+  
+    <p-table
+      #dtPartos
+      [value]="partos"
+      dataKey="id"
+      [rows]="10"
+      [loading]="loading"
+      [rowHover]="true"
+      [showGridlines]="true"
+      [paginator]="true"
+      [globalFilterFields]="['animal', 'tipoParto', 'sexoCria', 'observaciones']"
+      responsiveLayout="scroll"
+    >
+      <!-- Encabezado -->
+      <ng-template #header>
+        <tr>
+          <th>Fecha de Parto</th>
+          <th>Animal</th>
+          <th>Tipo de Parto</th>
+          <th>N° de Crías</th>
+          <th>Sexo de la Cría</th>
+          <th>Observaciones</th>
+          <th>Acción</th>
+        </tr>
+      </ng-template>
+  
+      <!-- Cuerpo -->
+      <ng-template #body let-parto>
+        <tr>
+          <td>{{ parto.fecha | date: 'MM/dd/yyyy' }}</td>
+          <td>{{ parto.animal }}</td>
+          <td>{{ parto.tipoParto }}</td>
+          <td>{{ parto.numCrias }}</td>
+          <td>{{ parto.sexoCria }}</td>
+          <td>{{ parto.observaciones }}</td>
+          <td>
+            <button pButton icon="pi pi-pencil" class="p-button-text p-button-sm text-green-600" (click)="editarParto(parto.id)"></button>
+            <button pButton icon="pi pi-trash" class="p-button-text p-button-sm text-pink-500" (click)="eliminarParto(parto.id)"></button>
+            <button pButton icon="pi pi-eye" class="p-button-text p-button-sm text-purple-500" (click)="verParto(parto.id)"></button>
+          </td>
+        </tr>
+      </ng-template>
+  
+      <!-- Mensaje vacío -->
+      <ng-template #emptymessage>
+        <tr>
+          <td colspan="7">No se encontraron registros de partos.</td>
+        </tr>
+      </ng-template>
+  
+      <!-- Cargando -->
+      <ng-template #loadingbody>
+        <tr>
+          <td colspan="7">Cargando datos de partos. Por favor espera...</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+  

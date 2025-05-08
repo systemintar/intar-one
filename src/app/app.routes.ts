@@ -4,7 +4,10 @@ import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { PartosComponent } from './partos/partos.component';
 import { AppLayout } from './layout/layout/layout.component';
+import { CrearPartoComponent } from './partos/crear-parto/crear-parto.component';
+
 
 // Definir las rutas
 export const appRoutes: Routes = [
@@ -36,6 +39,16 @@ export const appRoutes: Routes = [
         path: 'potreros',
         component: PotrerosComponent,
         pathMatch: 'full',
+      },
+      {
+        path: 'partos',
+        component: PartosComponent,
+        pathMatch: 'full',
+      },
+      {
+        path: 'crear-parto',
+        component: CrearPartoComponent,
+        title: 'Registrar Parto | Intar'
       }
     ]
   },
