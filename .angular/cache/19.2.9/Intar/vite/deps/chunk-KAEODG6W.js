@@ -1,11 +1,11 @@
 import {
-  CommonModule
-} from "./chunk-OUQLQ46Q.js";
-import {
   equals,
   removeAccents,
   resolveFieldData
 } from "./chunk-JKXUBX6Y.js";
+import {
+  CommonModule
+} from "./chunk-OUQLQ46Q.js";
 import {
   Component,
   Directive,
@@ -943,4 +943,4 @@ export {
   TranslationKeys,
   TreeDragDropService
 };
-//# sourceMappingURL=chunk-AUFFOLH3.js.map
+//# sourceMappingURL=chunk-KAEODG6W.js.map

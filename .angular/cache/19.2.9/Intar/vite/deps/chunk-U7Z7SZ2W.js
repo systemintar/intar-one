@@ -2,16 +2,7 @@ import {
   BaseStyle,
   PrimeNG,
   base
-} from "./chunk-V7TSZXOQ.js";
-import {
-  config_default,
-  service_default
-} from "./chunk-3LYLOFYP.js";
-import {
-  DOCUMENT,
-  isPlatformBrowser,
-  isPlatformServer
-} from "./chunk-OUQLQ46Q.js";
+} from "./chunk-64OF6Y5T.js";
 import {
   addClass,
   getHeight,
@@ -24,8 +15,17 @@ import {
   uuid
 } from "./chunk-7G4TG27L.js";
 import {
+  config_default,
+  service_default
+} from "./chunk-3LYLOFYP.js";
+import {
   getKeyValue
 } from "./chunk-JKXUBX6Y.js";
+import {
+  DOCUMENT,
+  isPlatformBrowser,
+  isPlatformServer
+} from "./chunk-OUQLQ46Q.js";
 import {
   ChangeDetectorRef,
   Directive,
@@ -480,4 +480,4 @@ export {
   Ripple,
   RippleModule
 };
-//# sourceMappingURL=chunk-S3GJKGYS.js.map
+//# sourceMappingURL=chunk-U7Z7SZ2W.js.map
