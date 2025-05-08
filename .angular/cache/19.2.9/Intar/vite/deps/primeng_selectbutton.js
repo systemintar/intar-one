@@ -1,7 +1,20 @@
 import {
   BaseComponent,
   Ripple
-} from "./chunk-S3GJKGYS.js";
+} from "./chunk-U7Z7SZ2W.js";
+import {
+  BaseStyle
+} from "./chunk-64OF6Y5T.js";
+import {
+  PrimeTemplate,
+  SharedModule
+} from "./chunk-KAEODG6W.js";
+import "./chunk-7G4TG27L.js";
+import "./chunk-3LYLOFYP.js";
+import {
+  equals,
+  resolveFieldData
+} from "./chunk-JKXUBX6Y.js";
 import {
   FormsModule,
   NG_VALUE_ACCESSOR,
@@ -9,23 +22,10 @@ import {
   NgModel
 } from "./chunk-2ZINMMZP.js";
 import {
-  BaseStyle
-} from "./chunk-V7TSZXOQ.js";
-import {
-  PrimeTemplate,
-  SharedModule
-} from "./chunk-AUFFOLH3.js";
-import "./chunk-3LYLOFYP.js";
-import {
   CommonModule,
   NgClass,
   NgTemplateOutlet
 } from "./chunk-OUQLQ46Q.js";
-import "./chunk-7G4TG27L.js";
-import {
-  equals,
-  resolveFieldData
-} from "./chunk-JKXUBX6Y.js";
 import {
   ChangeDetectionStrategy,
   Component,
